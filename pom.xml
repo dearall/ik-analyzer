@@ -107,4 +107,16 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>demo</id>
+            <name>demo release repository</name>
+            <url>http://localhost:8081/repository/demo/</url>
+        </repository>
+        <snapshotRepository>
+            <id>demo-snapshots</id>
+            <name>demo snapshot repository</name>
+            <url>http://localhost:8081/repository/demo-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

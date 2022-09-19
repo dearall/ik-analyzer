@@ -2,7 +2,7 @@ Long Term Support，welcome pull request
 
 IKAnalyzer 作者林良益 [linliangyi2007@gmail.com](linliangyi2007@gmail.com)，项目网址：[http://code.google.com/p/ik-analyzer/](http://code.google.com/p/ik-analyzer/)
 
-保持 IKAnalyzer 与 Lucene 版本对应，本版本支持 lucene 8.0/8.1/8.2/8.3/8.4/8.5/8.6：
+保持 IKAnalyzer 与 Lucene 版本对应，本版本支持 lucene 8.0/8.1/8.2/8.3/8.4/8.5/8.6/8.7：
 - Solr 支持: [https://github.com/magese/ik-analyzer-solr](https://github.com/magese/ik-analyzer-solr)
 - Elasticsearch 支持：[https://github.com/medcl/elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)
 
@@ -14,7 +14,7 @@ Maven用法：
     <dependency>
         <groupId>org.example.ik-analyzer</groupId>
         <artifactId>ik-analyzer</artifactId>
-        <version>8.6.0</version>
+        <version>8.7.0</version>
     </dependency>
 ```
 

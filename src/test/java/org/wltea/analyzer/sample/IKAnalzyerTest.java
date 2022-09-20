@@ -49,7 +49,8 @@ public class IKAnalzyerTest {
         TokenStream ts = null;
         try {
             ts = analyzer.tokenStream("myfield",
-                    new StringReader("这是一个中文分词的例子，你可以直接运行它！IKAnalyer can analysis english text too"));
+                    new StringReader("这是一个中文分词的例子，你可以直接运行它！IKAnalyer can analysis english text too. This is an test " +
+                            "case."));
             //获取词元位置属性
             OffsetAttribute offset = ts.addAttribute(OffsetAttribute.class);
             //获取词元文本属性
@@ -64,6 +65,7 @@ public class IKAnalzyerTest {
                 System.out.println(
                         offset.startOffset() + " - " + offset.endOffset() + " : " + term.toString() + " | " + type
                                 .type());
+                System.out.println("token: " + ts.reflectAsString(false));
             }
             //关闭TokenStream（关闭StringReader）
             ts.end();   // Perform end-of-stream operations, e.g. set the final offset.
